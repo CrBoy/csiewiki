@@ -1,0 +1,18 @@
+#!/bin/sh
+
+GITIT=gitit
+
+case $1 in
+	start)
+		echo "Starting gitit wiki"
+		$GITIT -f wiki.conf &
+	;;
+	stop)
+		echo "Stoping gitit wiki"
+		killall $GITIT
+	;;
+	*)
+		echo "Use 'start' or 'stop'"
+	;;
+esac
+
