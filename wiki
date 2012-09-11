@@ -11,6 +11,11 @@ case $1 in
 		echo "Stoping gitit wiki"
 		killall $GITIT
 	;;
+	restart)
+		echo "Restarting gitit wiki"
+		killall $GITIT
+		$GITIT -f wiki.conf &
+	;;
 	*)
 		echo "Use 'start' or 'stop'"
 	;;
