@@ -1,7 +1,8 @@
 @import url("screen.css"); /* default gitit screen styles */
 @import url("hk-pyg.css"); /* for syntax highlighting */
 
-/* Put your custom style modifications here: */
+#sidebar { width: 20em; }
+#maincol { margin-left: 22em !important; }
 
 #logo a{
 	text-decoration: none !important;
