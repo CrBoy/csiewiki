@@ -1,7 +1,7 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-	var disqus_shortname = '<my wiki shortname>'; // required: replace example with your forum shortname
+	var disqus_shortname = 'nckucsiewiki'; // required: replace example with your forum shortname
 
 	function need_comment(path, search) {
 		if( path[1]===undefined || path[1]==='_' || path[1]==='@' )

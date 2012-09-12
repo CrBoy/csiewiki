@@ -1,6 +1,6 @@
 <script type="text/javascript">
 	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', '<Google Analytic ID>']);
+	_gaq.push(['_setAccount', 'UA-34625016-1']);
 	_gaq.push(['_trackPageview']);
 
 	(function() {

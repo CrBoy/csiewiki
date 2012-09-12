@@ -22,6 +22,7 @@
             $userbox()$
             $tabs$ 
             $content()$
+			$disqus()$
             $footer()$
           </div>
         </div>
@@ -42,4 +43,5 @@
     $expire()$
     $getuser()$
   </body>
+  $analytics()$
 </html>
