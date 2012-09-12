@@ -11,8 +11,8 @@ textarea:focus, input[type='text']:focus, input[type='password']:focus, select:f
 input, button, select, option { padding: .2em; }
 input, select { cursor: pointer; }
 input[type='text'], input[type='password'] { cursor: text; }
-input[type='submit'] { border: solid 1px #666; background-color: #ccc; color: black; }
-input[type='submit']:hover { border: solid 1px #000; background-color: #eee; color: black; }
+input[type='submit'], input[type='button'] { border: solid 1px #666; background-color: #ccc; color: black; }
+input[type='submit']:hover, input[type='button']:hover { border: solid 1px #000; background-color: #eee; color: black; }
 textarea,  input { padding: .2em; }
 table, tr, td, th { border: none; }
 hr { height: 1px; color: #aaa; background-color: #aaa; border: 0; margin: .2em 0 .2em 0; }
