@@ -13,3 +13,6 @@
 	text-shadow: #eee 0 1px 0px !important;
 }
 
+div#disqus_thread {
+	margin-top: 1.5em;
+}
