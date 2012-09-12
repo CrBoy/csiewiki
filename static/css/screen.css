@@ -74,6 +74,7 @@ h6 > a:link, h6 > a:active, h6 > a:hover, h6 > a:focus, h6 > a:visited {
 #userbox  { text-align: right; font-weight: bold; margin: 1em; }
 
 #logo { min-height: 50px; }
+#logo img{ max-width: 100%; }
 
 #sidebar fieldset { background-color: white; margin-bottom: 1em; padding: 0; font-size: 93%; }
 #sidebar fieldset, #sidebar fieldset legend { font-weight: normal; }

@@ -3,21 +3,12 @@
 
 /* Put your custom style modifications here: */
 
-#logo img{
-	width: 100%;
+#logo a{
+	text-decoration: none !important;
+	color: #666;
 }
 
-textarea, input[type='text'], input[type='password'], select {
-	border: 1px solid #ccc;
-	background: #fff;
-	//outline: none;
-}
-textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover {
-	border-color: #fff;
-	//outline: 1px solid #aaa;
-}
-textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus {
-	border-color: #fff;
-	//outline: 1px solid black;
+#logo a:hover{
+	text-shadow: #eee 0 1px 0px !important;
 }
 
