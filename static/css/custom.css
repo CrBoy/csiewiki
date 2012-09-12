@@ -13,6 +13,15 @@
 	text-shadow: #eee 0 1px 0px !important;
 }
 
+pre, p>code, div>code {
+	border: 1px gray solid;
+	border-radius: 3px;
+	padding: 0 3px;
+	background: #eee;
+	color: #111111;
+	text-shadow: white 0 1px;
+}
+
 div#disqus_thread {
 	margin-top: 1.5em;
 }
