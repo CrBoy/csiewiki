@@ -1,23 +1,27 @@
 #!/bin/sh
 
 GITIT=gitit
+BASEDIR=`dirname $0`
 
 case $1 in
 	start)
-		echo "Starting gitit wiki"
-		$GITIT -f wiki.conf &
+		echo "Starting gitit wiki..."
+		cd $BASEDIR
+		$GITIT -f wiki.conf >/dev/null &
+		echo $! > wiki.pid
 	;;
 	stop)
-		echo "Stoping gitit wiki"
-		killall $GITIT
+		echo "Stoping gitit wiki..."
+		cd $BASEDIR
+		kill `cat wiki.pid 2>/dev/null` 2>/dev/null && rm wiki.pid || echo "Cannot stop!"
 	;;
 	restart)
-		echo "Restarting gitit wiki"
-		killall $GITIT
-		$GITIT -f wiki.conf &
+		cd $BASEDIR
+		./wiki stop
+		./wiki start
 	;;
 	*)
-		echo "Use 'start' or 'stop'"
+		echo "Use 'start', 'stop', or 'restart'"
 	;;
 esac
 
