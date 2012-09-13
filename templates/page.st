@@ -43,5 +43,6 @@
     $expire()$
     $getuser()$
   </body>
+  $prettify()$
   $analytics()$
 </html>
