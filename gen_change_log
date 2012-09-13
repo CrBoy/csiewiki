@@ -1,0 +1,20 @@
+#!/bin/sh
+
+BASEDIR=`dirname $0`
+WIKIDATA=wikidata
+CHANGELOG_FILE=CHANGELOG.page
+CATEGORIES=""
+
+cd $BASEDIR
+echo "---
+title: ChangeLog
+categories: $CATEGORIES
+...
+" > $WIKIDATA/$CHANGELOG_FILE
+
+git log --format=format:'%ad: %s' --date=short --no-merges|sed 's/$/\n/' >> $WIKIDATA/$CHANGELOG_FILE
+
+cd $WIKIDATA
+git add "$CHANGELOG_FILE"
+git commit -m "Update ChangeLog"
+
