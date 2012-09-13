@@ -1,11 +1,30 @@
 
-<link href='http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css' type='text/css' rel='stylesheet' />
+<link href='$base$/css/prettify.css' type='text/css' rel='stylesheet' />
 <script type='text/javascript' src='http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js'></script>
 <script>
-	var pres = document.getElementsByTagName('pre');
-	for (i=0; i<pres.length; i++){
-		var e = pres[i];
-		e.className = 'prettyprint';
-	}
-	prettyPrint();
+	function hook_jQuery_html(\$) {
+		// Save a reference to the original html function
+		jQuery.fn.originalHtml = jQuery.fn.html;
+		// Let's redefine the html function to include a custom event
+		jQuery.fn.html = function() {
+			if(arguments.length) {
+				jQuery.fn.originalHtml.apply(this, arguments);
+				prettyPrint();
+				jQuery.fn.html = jQuery.fn.originalHtml;
+				return this;
+			} else {
+				return this.originalHtml();
+			}
+		}
+	};
+
+	\$(document).ready(function(){
+		prettyPrint();
+		var preview_button = document.getElementById('previewButton');
+		previewButton.onclick = function onclick(event) {
+			  hook_jQuery_html(jQuery);
+			  updatePreviewPane();
+		}
+	});
+
 </script>
