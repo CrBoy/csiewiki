@@ -3,7 +3,7 @@
 BASEDIR=`dirname $0`
 WIKIDATA=wikidata
 CHANGELOG_FILE=CHANGELOG.page
-CATEGORIES=""
+CATEGORIES="系統頁面"
 
 cd $BASEDIR
 echo "---
