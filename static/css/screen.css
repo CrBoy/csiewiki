@@ -37,7 +37,7 @@ abbr, acronym { border-bottom:1px dotted #000; cursor:help; }
 em { font-style: italic; }
 del { text-decoration: line-through; }
 
-blockquote, ul, ol, dl { margin-bottom: 1em; }
+blockquote { margin: 1em; }
 ol, ul, dl { margin-left: 2em; }
 dl dd { margin-left: 1em; }
 th, td { padding: .5em; }
