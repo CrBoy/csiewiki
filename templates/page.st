@@ -14,6 +14,7 @@
     <link href="$base$/css/print.css" rel="stylesheet" media="print" type= "text/css" />
     $endif$
     <!--[if IE]><link href="$base$/css/ie.css" rel="stylesheet" media="screen, projection" type="text/css" /><![endif]-->
+	$analytics()$
   </head>
   <body>
     <div id="doc3" class="yui-t1">
@@ -44,5 +45,4 @@
     $getuser()$
   </body>
   $prettify()$
-  $analytics()$
 </html>
