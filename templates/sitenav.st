@@ -8,10 +8,10 @@
       <li><a href="$base$/_random">隨機頁面</a></li>
       <li><a href="$base$/_activity">最近活動</a></li>
       $if(wikiupload)$
-        <li><a href="$base$/_upload">上傳檔案</a></li>
+      <li><a href="$base$/_upload">上傳檔案</a></li>
       $endif$
       $if(feed)$
-      <li><a href="$base$/_feed/" type="application/atom+xml" rel="alternate" title="ATOM Feed">訂閱 (Atom)</a> <img alt="feed icon" src="$base$/img/icons/feed.png"/></li>
+      <li><a href="$base$/_feed/" type="application/atom+xml" rel="alternate" title="ATOM Feed">訂閱 (Atom) <img alt="feed icon" src="$base$/img/icons/feed.png"/></a></li>
       $endif$
       <li><a href="$base$/Help">說明</a></li>
     </ul>
