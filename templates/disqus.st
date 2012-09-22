@@ -3,7 +3,9 @@
 	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 	var disqus_shortname = '<my wiki shortname>'; // required: replace example with your forum shortname
 
-	function need_comment(path, search) {
+	function need_comment() {
+		var path = window.location.pathname;
+		var search = window.location.search;
 		if( path[1]===undefined || path[1]==='_' || path[1]==='@' )
 			return false;
 		if( search === "?printable" )
@@ -11,9 +13,7 @@
 		return true;
 	}
 
-	var path = window.location.pathname;
-	var search = window.location.search;
-	if(need_comment(path, search)) {
+	if(need_comment()) {
 		/* * * DON'T EDIT BELOW THIS LINE * * */
 		(function() {
 		 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
