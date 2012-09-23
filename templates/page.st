@@ -17,17 +17,17 @@
 	$analytics()$
   </head>
   <body>
-    <div id="doc3" class="yui-t1">
-        <div id="yui-main">
-          <div id="maincol" class="yui-b">
-            $userbox()$
-            $tabs$ 
-            $content()$
-			$disqus()$
-            $footer()$
-          </div>
+    <div id="container" class="">
+      <div id="main">
+        <div id="maincol" class="">
+          $userbox()$
+          $tabs$
+          $content()$
+		  $disqus()$
+          $footer()$
         </div>
-        <div id="sidebar" class="yui-b first">
+      </div>
+        <div id="sidebar" class="">
           $logo()$
           $if(sitenav)$
             $sitenav()$
