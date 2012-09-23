@@ -25,3 +25,7 @@ pre, p>code, div>code {
 div#disqus_thread {
 	margin-top: 1.5em;
 }
+
+div#poweredby {
+	margin-top: .5em;
+}
