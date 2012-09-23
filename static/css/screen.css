@@ -1,7 +1,12 @@
 @import url("reset-fonts-grids.css");
 
 html { background: #f9f9f9; color: black; }
-body { margin: 10px; }
+body { text-align: left; margin: 10px; }
+#main {
+	width: 100%;
+	float: right;
+	margin-left: -25em;
+}
 
 fieldset { border: 1px solid #ccc; padding: 1em; }
 legend { font-weight: bold; margin-left: 1em; padding: 4px; }
