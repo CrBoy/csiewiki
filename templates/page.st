@@ -17,7 +17,7 @@
 	$analytics()$
   </head>
   <body>
-    <div id="container" class="">
+    <div id="container" class="container">
       <div id="main">
         <div id="maincol" class="">
           $userbox()$
