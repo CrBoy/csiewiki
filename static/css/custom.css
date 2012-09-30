@@ -52,6 +52,7 @@ h5 > a:link, h5 > a:active, h5 > a:hover, h5 > a:focus, h5 > a:visited,
 h6 > a:link, h6 > a:active, h6 > a:hover, h6 > a:focus, h6 > a:visited {
         color: black; text-decoration: none; }
 
+/* Footer */
 div#footer ul {
 	list-style: none;
 }
@@ -63,6 +64,14 @@ div#footer ul li {
 	border-right: 1px solid #DDD;
 }
 
+/* Index Page */
+.index ul { list-style: none; margin: 0; padding: 0; }
+.index li { list-style: none; background-position: 0 1px; background-repeat: no-repeat; padding-left: 20px; }
+.index li.page { background-image: url(../img/icons/page.png); }
+.index li.folder { background-image: url(../img/icons/folder.png); }
+.index li.upload { background-image: url(../img/icons/upload.png); }
+.index a { color: #000000; cursor: pointer; text-decoration: none; }
+.index a:hover { text-decoration: underline; }
 
 /*
 #logo { min-height: 50px; }
