@@ -10,8 +10,10 @@ tabs.children('li:contains("discuss")').remove();
 
 var exportbox = $('form#exportbox');
 exportbox.addClass('input-append');
-exportbox.children('input#export').addClass('btn');
-exportbox.children('input#export').attr('value', '匯出');
+exportbox.children('input#export').remove();
+var exportbutton = $('<button></button>').addClass('btn').attr('type','submit').attr('name','export').attr('id','export');
+exportbutton.html('匯出');
+exportbox.append( exportbutton );
 
 var editform = $('form#editform');
 var log_label = editform.children('label:contains("Description of changes")');
