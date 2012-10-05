@@ -99,3 +99,11 @@ pre, p>code, div>code {
 div#disqus_thread {
 	margin-top: 1.5em;
 }
+
+.added {
+	background-color: #afa;
+}
+
+.deleted {
+	background-color: #faa;
+}
