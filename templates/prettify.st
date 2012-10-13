@@ -20,11 +20,11 @@
 
 	\$(document).ready(function(){
 		prettyPrint();
-		var preview_button = document.getElementById('previewButton');
-		previewButton.onclick = function onclick(event) {
-			  hook_jQuery_html(jQuery);
-			  updatePreviewPane();
-		}
+		var previewbutton = \$('#previewButton');
+		previewbutton.click(function(){
+			hook_jQuery_html(jQuery);
+			updatePreviewPane();
+		});
 	});
 
 </script>
