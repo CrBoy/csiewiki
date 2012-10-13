@@ -100,6 +100,28 @@ textarea {
 	font-family: monospace;
 }
 
+div#categoryList {
+	margin-top: 2em;
+	padding: .5em;
+	background: #eee;
+	border: dotted 2px #aaa;
+}
+
+div#categoryList > ul::before {
+	content: "分類：";
+	display: inline;
+}
+
+div#categoryList > ul {
+	list-style: none;
+	display: inline;
+}
+
+div#categoryList > ul > li {
+	display: inline;
+	margin: 0 8px 0;
+}
+
 div#disqus_thread {
 	margin-top: 1.5em;
 }

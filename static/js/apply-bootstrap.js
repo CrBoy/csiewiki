@@ -27,6 +27,7 @@ previewbutton.click(function(){
 	editform.children('#update').addClass('btn-primary');
 });
 
+$('div#categoryList > ul > li > a').addClass('label');
 
 function submit_goform(){
 	var form = $('#searchform');
