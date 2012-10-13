@@ -96,6 +96,10 @@ pre, p>code, div>code {
 	text-shadow: white 0 1px;
 }
 
+textarea {
+	font-family: monospace;
+}
+
 div#disqus_thread {
 	margin-top: 1.5em;
 }
