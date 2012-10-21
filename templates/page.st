@@ -29,6 +29,7 @@
           <!-- \$endif\$ -->
         </div>
       <div id="main">
+        $socialshare()$
         <div id="" class="">
           $tabs$
           $content()$
