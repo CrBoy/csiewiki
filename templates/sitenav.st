@@ -1,7 +1,13 @@
 <div id="navbar" class="navbar navbar-fixed-top">
 <div class="navbar-inner">
 	<div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
 		<a class="brand" href="$base$/">成大資工 Wiki</a>
+		<div class="nav-collapse collapse">
 		<ul class="nav">
 			<li><a href="$base$/_index">所有頁面</a></li>
 			<li><a href="$base$/_categories">分類</a></li>
@@ -21,6 +27,7 @@
 			<li><a id="loginlink" class="login" href="$base$/_login">登入 / 註冊帳號</a></li>
 			<li><a id="logoutlink" class="login" href="$base$/_logout">登出 <span id="username"></span></a></li>
 		</ul>
+		</div>
 	</div>
 </div>
 </div>
