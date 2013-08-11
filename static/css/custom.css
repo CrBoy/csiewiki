@@ -133,3 +133,7 @@ div#disqus_thread {
 .deleted {
 	background-color: #faa;
 }
+
+#full_name_1{
+	display: none;
+}
