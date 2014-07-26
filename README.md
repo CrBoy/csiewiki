@@ -18,6 +18,10 @@ Run!
 	cd mywiki
 	./wiki start
 
+Preview
+=======
+[成大資工 Wiki](http://wiki.csie.ncku.edu.tw/)
+
 Know issues and TODOs
 =====================
 
