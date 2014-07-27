@@ -1,6 +1,6 @@
 
 <link href='$base$/css/prettify.css' type='text/css' rel='stylesheet' />
-<script type='text/javascript' src='http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js'></script>
+<script type='text/javascript' src='//google-code-prettify.googlecode.com/svn/trunk/src/prettify.js'></script>
 <script>
 	function hook_jQuery_html(\$) {
 		// Save a reference to the original html function
